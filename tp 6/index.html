@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        document.write("Ejercicio 1 <br>");
+        numeros.forEach(numero => document.write("7 x " + numero + " = " + numero * 7 + "<br>"));
+
+        document.write("Ejercicio 2 <br>");
+        var tabla = parseInt(prompt("ingrese la tabla que quiere"));
+        document.write("<h3> Tabla del " + tabla + " </h3>")
+        numeros.forEach(numero => document.write(tabla + " x " + numero + " = " + numero * tabla + "<br>"));
+        document.write("Ejercicio 3 <br>");
+        var nombres = ['Ana', `Juan`, `Maria`, `mohamed`];
+        nombres.forEach(function (nombre) {
+            document.write("gerente " + nombre + "<br>");
+        });
+        document.write("Ejercicio 4 <br>");
+        var edades = [16, 28, 34, 70, 9];
+        edades.forEach(edad => document.write((edad - 6) + "<br>"));
+        document.write("Ejercicio 5 <br>");
+        document.write("La diferencia entre map y forEach es que se usa el map si necesitas crear y devolver un nuevo arreglo transformado <br> mientras que forEach se usa cuando solo necesitas realizar una accion con cada elemento del arreglo sin la necesidad de devolver algo")
+
+    </script>
+
+</body>
+
+</html>
